@@ -10,19 +10,19 @@ import java.util.Arrays;
 public class CutSteelStrip {
 
     public static int cut(int[] p, int n) {
-        int[] pMax = new int[n + 1];
-        pMax[0] = 0;
-        pMax[1] = 1;
+        int[] r = new int[n + 1];
+        r[0] = 0;
+        r[1] = 1;
 
         for (int i = 2; i <= n; i++) {
             int max = p[i - 1];
             for (int j = 1; j < i; j++) {
-                max = Math.max(max, pMax[j] + pMax[i - j]);
+                max = Math.max(max, r[j] + r[i - j]);
             }
-            pMax[i] = max;
+            r[i] = max;
         }
-        printArr(pMax);
-        return pMax[n];
+        printArr(r);
+        return r[n];
     }
 
     public static void main(String[] args) {
