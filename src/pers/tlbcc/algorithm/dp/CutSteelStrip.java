@@ -26,7 +26,7 @@ public class CutSteelStrip {
     }
 
     public static void main(String[] args) {
-        int[] p = new int[] { 1, 5, 8, 9, 10, 17, 17, 24, 30 };
+        int[] p = new int[] { 1, 5, 8, 9, 10, 17, 17, 20, 24, 30 };
         int n = 4;
         int maxValue = cut(p, n);
         System.out.println(maxValue);
