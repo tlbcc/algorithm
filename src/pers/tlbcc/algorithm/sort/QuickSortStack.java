@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * @author: tlbcc
  * @description: 快速排序（非递归版）
- * @date: 2019-08-13 10:30
+ * @date: 2019-08-14 16:30
  **/
 public class QuickSortStack {
 
@@ -109,16 +109,5 @@ public class QuickSortStack {
         print(arr);
         sort(arr);
         print(arr);
-//        Tag a = new Tag(1,2);
-//        Tag b = new Tag(3,4);
-//        System.out.println(a.toString());
-//        System.out.println(b.toString());
-//        Stack<String> s = new Stack<>();
-//        s.push("123");
-//        s.push("321");
-//        s.push("456");
-//        System.out.println(s.pop());
-//        System.out.println(s.pop());
-//        System.out.println(s.pop());
     }
 }
