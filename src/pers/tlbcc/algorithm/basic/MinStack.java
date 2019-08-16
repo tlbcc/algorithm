@@ -60,12 +60,25 @@ public class MinStack {
         minStack.push(15);
         minStack.push(5);
 
+        minStack.print();
+        System.out.println();
         System.out.println("stack min: " + minStack.getMin());
         while (!minStack.empty()) {
             System.out.println("stack pop:" + minStack.pop());
             System.out.println("stack min: " + minStack.getMin());
+            minStack.print();
+            System.out.println();
         }
 
+    }
+
+    // test
+    public void print() {
+        System.out.print("stack: [ ");
+        for (Integer i : stack) {
+            System.out.print(i + " ");
+        }
+        System.out.println("]");
     }
 
 }
