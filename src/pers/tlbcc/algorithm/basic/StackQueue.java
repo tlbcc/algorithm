@@ -1,10 +1,6 @@
 package pers.tlbcc.algorithm.basic;
 
-import java.math.BigInteger;
 import java.util.Stack;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * @author: tlbcc
@@ -39,6 +35,7 @@ public class StackQueue {
             in(queue);
         }
 
+
         for (int i = 0; i < 5; i++) {
             out(queue);
         }
@@ -54,9 +51,10 @@ public class StackQueue {
 
 
     }
+
     // test
     public static void in(StackQueue queue) {
-        int random = (int)(Math.random() * 100);
+        int random = (int) (Math.random() * 100);
         System.out.println("in queue: " + random);
         queue.in(random);
     }
