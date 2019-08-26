@@ -8,27 +8,22 @@ package pers.tlbcc.algorithm.greedy;
 public class RemoveKNumber {
 
     public static String count(String num, int k) {
-        for (int i = 0; i < k; i++) {
-            num = remove(num);
-        }
-        return num;
-    }
-
-    private static String remove(String num) {
-        int max = num.charAt(0);
-        boolean hasCut = false;
-        for (int i = 1; i < num.length(); i++) {
-            if (num.charAt(i) < max) {
-                num = num.substring(0, i - 1) + num.substring(i);
-                hasCut = true;
-                break;
+        int newLength = num.length() - k;
+        char[] newNum = new char[num.length()];
+        int top = 0;
+        for (int i = 0; i < num.length(); i++) {
+            char c = num.charAt(i);
+            while (top > 0 && newNum[top - 1] > c && k > 0) {
+                top--;
+                k--;
             }
-            max = num.charAt(i);
+            newNum[top++] = c;
         }
-        if (!hasCut) {
-            return num.substring(0, num.length() - 1);
+        int offset = 0;
+        while (offset < newLength && newNum[offset] == '0') {
+            offset++;
         }
-        return num;
+        return offset == newLength ? "0" : new String(newNum, offset, newLength - offset);
     }
 
     public static void main(String[] args) {
