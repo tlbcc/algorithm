@@ -23,7 +23,7 @@ public class DigGoldMine {
                 } else {
                     p[i][j] = Math.max(p[i - 1][j], p[i - 1][j - n[i - 1][1]] + n[i - 1][0]);
                 }
-                print(p);
+//                print(p);
             }
         }
         return p[n.length][w];
