@@ -2,6 +2,7 @@ package pers.tlbcc.algorithm.basic;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * @author: tlbcc
@@ -10,7 +11,13 @@ import java.util.List;
  */
 public class AStarSearch {
 
-    public static int[][] MAP = {};
+    public static int[][] MAP = {
+            {0, 0, 0, 0, 0, 0, 0},
+            {0, 0, 0, 1, 0, 0, 0},
+            {0, 0, 0, 1, 0, 0, 0},
+            {0, 0, 0, 1, 0, 0, 0},
+            {0, 0, 0, 0, 0, 0, 0},
+    };
 
     static class Grid {
         int x; // 横坐标
@@ -108,14 +115,14 @@ public class AStarSearch {
      * @return
      */
     public static boolean isVaildGrid(int x, int y, List<Grid> openList, List<Grid> closeList) {
-        if (x < 0 || x >= MAP.length) {
+        if (y < 0 || y >= MAP.length) {
             return false;
         }
-        if (y < 0 || y >= MAP[0].length) {
+        if (x < 0 || x >= MAP[0].length) {
             return false;
         }
         // 是否有障碍物
-        if (MAP[x][y] == 1) {
+        if (MAP[y][x] == 1) {
             return false;
         }
         if (containXY(openList, x, y)) {
@@ -137,6 +144,17 @@ public class AStarSearch {
     }
 
     public static void main(String[] args) {
-
+        Grid end = aStarSearch(MAP, new Grid(1, 2), new Grid(5, 2));
+        Stack<Grid> stack = new Stack<>();
+        Grid temp = end;
+        stack.push(temp);
+        while (temp.father != null) {
+            temp = temp.father;
+            stack.push(temp);
+        }
+        while (!stack.empty()) {
+            Grid tmp = stack.pop();
+            System.out.println(String.format("%d, %d", tmp.x, tmp.y));
+        }
     }
 }
