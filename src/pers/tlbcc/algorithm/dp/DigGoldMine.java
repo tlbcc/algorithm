@@ -1,9 +1,9 @@
 package pers.tlbcc.algorithm.dp;
 
 /**
- * @author: tlbcc
- * @description: 10人挖5金矿，求最多挖多少
- * @date: 2019-08-28 11:26
+ * @author tlbcc
+ * @description 10人挖5金矿，求最多挖多少
+ * @date 2019-08-28 11:26
  **/
 public class DigGoldMine {
 

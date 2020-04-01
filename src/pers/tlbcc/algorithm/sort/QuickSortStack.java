@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Stack;
 
 /**
- * @author: tlbcc
- * @description: 快速排序（非递归版）
- * @date: 2019-08-14 16:30
+ * @author tlbcc
+ * @description 快速排序（非递归版）
+ * @date 2019-08-14 16:30
  **/
 public class QuickSortStack {
 

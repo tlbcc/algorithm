@@ -1,10 +1,10 @@
 package pers.tlbcc.algorithm.basic;
 
 /**
- * @author: tlbcc
- * @description: 寻找全排列的下一个数
+ * @author tlbcc
+ * @description 寻找全排列的下一个数
  * 例子：12345 -> 12354 -> 12435 ...
- * @date: 2019-08-22 17:26
+ * @date 2019-08-22 17:26
  */
 public class NearestNumber {
 

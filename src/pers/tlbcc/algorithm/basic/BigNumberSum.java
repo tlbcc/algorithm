@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.Stack;
 
 /**
- * @author: tlbcc
- * @description: 大数相加
- * @date: 2019-08-26 17:21
+ * @author tlbcc
+ * @description 大数相加
+ * @date 2019-08-26 17:21
  **/
 public class BigNumberSum {
 

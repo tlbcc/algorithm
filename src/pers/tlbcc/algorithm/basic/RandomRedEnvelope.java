@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * @author: tlbcc
- * @description: 随机红包算法
+ * @author tlbcc
+ * @description 随机红包算法
  * 红包满足如下要求：
  * 1. 所有人抢到的金额总和等于红包金额
  * 2. 每人至少抢到0.01元
  * 3. 要保证每个金额尽量均衡分布，不要出现两极分化过于严重的情况
- * @date: 2020-03-30 16:22
+ * @date 2020-03-30 16:22
  */
 public class RandomRedEnvelope {
 

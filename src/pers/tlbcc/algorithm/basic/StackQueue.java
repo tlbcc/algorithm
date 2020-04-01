@@ -3,9 +3,9 @@ package pers.tlbcc.algorithm.basic;
 import java.util.Stack;
 
 /**
- * @author: tlbcc
- * @description: 用栈实现一个队列
- * @date: 2019-08-21 11:10
+ * @author tlbcc
+ * @description 用栈实现一个队列
+ * @date 2019-08-21 11:10
  **/
 public class StackQueue {
     private Stack<Integer> stackA = new Stack<>();

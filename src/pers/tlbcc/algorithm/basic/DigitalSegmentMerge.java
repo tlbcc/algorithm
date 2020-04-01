@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * @author tlbcc
  * @description 合并数字段，例如，合并前： 2, 10, 7, 1-3, 4-5, 6, 9-11 合并后：1-7, 9-11
- * @date 2020/3/3 18:26
+ * @date 2020-03-03 18:26
  */
 public class DigitalSegmentMerge {
 

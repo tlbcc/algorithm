@@ -3,9 +3,9 @@ package pers.tlbcc.algorithm.dp;
 import java.util.Arrays;
 
 /**
- * @author: tlbcc
- * @description: 钢条切割
- * @date: 2019-07-31 17:39
+ * @author tlbcc
+ * @description 钢条切割
+ * @date 2019-07-31 17:39
  **/
 public class CutSteelStrip {
 

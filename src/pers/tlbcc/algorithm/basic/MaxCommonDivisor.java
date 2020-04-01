@@ -1,9 +1,9 @@
 package pers.tlbcc.algorithm.basic;
 
 /**
- * @author: tlbcc
- * @description: 求两个正整数的最大公约数
- * @date: 2019-08-16 14:55
+ * @author tlbcc
+ * @description 求两个正整数的最大公约数
+ * @date 2019-08-16 14:55
  **/
 public class MaxCommonDivisor {
 

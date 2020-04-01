@@ -1,9 +1,9 @@
 package pers.tlbcc.algorithm.greedy;
 
 /**
- * @author: tlbcc
- * @description: 删除K个数字后的最小值
- * @date: 2019-08-26 11:11
+ * @author tlbcc
+ * @description 删除K个数字后的最小值
+ * @date 2019-08-26 11:11
  **/
 public class RemoveKNumber {
 

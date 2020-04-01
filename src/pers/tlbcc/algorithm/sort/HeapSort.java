@@ -3,9 +3,9 @@ package pers.tlbcc.algorithm.sort;
 import java.util.Arrays;
 
 /**
- * @author: tlbcc
- * @description: 堆排序
- * @date: 2019-08-13 10:28
+ * @author tlbcc
+ * @description 堆排序
+ * @date 2019-08-13 10:28
  **/
 public class HeapSort {
 

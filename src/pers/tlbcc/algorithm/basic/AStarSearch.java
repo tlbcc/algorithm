@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Stack;
 
 /**
- * @author: tlbcc
- * @description: A星寻路
- * @date: 2019/11/26 16:54
+ * @author tlbcc
+ * @description A星寻路
+ * @date 2019-11-26 16:54
  */
 public class AStarSearch {
 

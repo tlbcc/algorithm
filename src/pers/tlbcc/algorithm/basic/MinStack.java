@@ -3,10 +3,10 @@ package pers.tlbcc.algorithm.basic;
 import java.util.Stack;
 
 /**
- * @author: tlbcc
- * @description: 最小栈实现<br>
+ * @author tlbcc
+ * @description 最小栈实现<br>
  * 一个栈，实现入栈，出栈，和获取当前栈内最小值。
- * @date: 2019-08-16 14:07
+ * @date 2019-08-16 14:07
  **/
 public class MinStack {
     private Stack<Integer> stack = new Stack<>();

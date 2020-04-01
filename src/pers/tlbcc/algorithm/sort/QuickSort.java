@@ -3,9 +3,9 @@ package pers.tlbcc.algorithm.sort;
 import java.util.Arrays;
 
 /**
- * @author: tlbcc
- * @description: 快速排序
- * @date: 2019-08-13 10:30
+ * @author tlbcc
+ * @description 快速排序
+ * @date 2019-08-13 10:30
  **/
 public class QuickSort {
 

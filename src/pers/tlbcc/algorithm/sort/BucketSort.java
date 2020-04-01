@@ -6,9 +6,9 @@ import java.util.Collections;
 import java.util.LinkedList;
 
 /**
- * @author: tlbcc
- * @description: 桶排序
- * @date: 2019-08-16 17:36
+ * @author tlbcc
+ * @description 桶排序
+ * @date 2019-08-16 17:36
  **/
 public class BucketSort {
 

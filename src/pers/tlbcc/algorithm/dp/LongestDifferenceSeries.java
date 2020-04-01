@@ -1,9 +1,9 @@
 package pers.tlbcc.algorithm.dp;
 
 /**
- * @author: tlbcc
- * @description: 最长等差数列长度
- * @date: 2019-08-05 10:14
+ * @author tlbcc
+ * @description 最长等差数列长度
+ * @date 2019-08-05 10:14
  **/
 public class LongestDifferenceSeries {
 

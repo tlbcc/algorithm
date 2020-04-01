@@ -1,9 +1,9 @@
 package pers.tlbcc.algorithm.basic;
 
 /**
- * @author: tlbcc
- * @description: 判断一个正整数是否为2的整数次幂
- * @date: 2019-08-16 17:08
+ * @author tlbcc
+ * @description 判断一个正整数是否为2的整数次幂
+ * @date 2019-08-16 17:08
  **/
 public class PowerOf2 {
 

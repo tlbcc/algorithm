@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author: tlbcc
- * @description: 获取无序数组排序后的最大相邻差
- * @date: 2019-08-19 10:47
+ * @author tlbcc
+ * @description 获取无序数组排序后的最大相邻差
+ * @date 2019-08-19 10:47
  **/
 public class MaxSortDistance {
 

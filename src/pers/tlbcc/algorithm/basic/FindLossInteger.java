@@ -4,11 +4,11 @@ import java.io.File;
 import java.util.Arrays;
 
 /**
- * @author: tlbcc
- * @description: 寻找缺失整数<br />
+ * @author tlbcc
+ * @description 寻找缺失整数<br />
  * 一个数组中存放的都是正整数，其中有2个整数出现了奇数次，
  * 其他数都出现了偶数次，请找出这两个奇数。
- * @date: 2019/11/26 15:53
+ * @date 2019-11-26 15:53
  */
 public class FindLossInteger {
 
