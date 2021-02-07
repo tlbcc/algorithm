@@ -27,36 +27,29 @@ public class GetEqualSubstringsWithinBudget {
         }
         int maxLength = 0;
         int useCost = 0;
-        for (int l = 0, r = 0; l < arr.length && r < arr.length; ) {
+        // 由于只取最大长度，所以左右指针之间的距离只会越来越大
+        for (int l = 0, r = 0; r < arr.length; r++) {
+            useCost += arr[r];
             // 判断代价，指针移动
             if (useCost > maxCost) {
                 useCost -= arr[l];
-                // 左右指针同位，一起移动，否则做指针移动
-                if (l == r) {
-                    r++;
-                }
                 l++;
             } else {
-                useCost += arr[r];
-                // 如果未超过最大代价，更新最大长度
-                if (useCost <= maxCost) {
-                    maxLength = Math.max(r - l + 1, maxLength);
-                }
-                r++;
+                maxLength = Math.max(r - l + 1, maxLength);
             }
         }
-
         return maxLength;
     }
 
     /**
      * 暴力递归方式（对数器）
-     * @author tlbcc
-     * @date 2021/2/5 17:20
-     * @param s s字符串
-     * @param t t字符串
+     *
+     * @param s       s字符串
+     * @param t       t字符串
      * @param maxCost 最大开销
      * @return int
+     * @author tlbcc
+     * @date 2021/2/5 17:20
      **/
     public static int equalSubstringGreedy(String s, String t, int maxCost) {
         int l1 = progress(s, t, maxCost, 0, 0, 0, true);
@@ -103,8 +96,8 @@ public class GetEqualSubstringsWithinBudget {
             int cost = r.nextInt(10);
             String a = randomStr(length);
             String b = randomStr(length);
-            int r1 = equalSubstring(a, b ,cost);
-            int r2 = equalSubstringGreedy(a, b ,cost);
+            int r1 = equalSubstring(a, b, cost);
+            int r2 = equalSubstringGreedy(a, b, cost);
             if (r1 == r2) {
                 continue;
             }
